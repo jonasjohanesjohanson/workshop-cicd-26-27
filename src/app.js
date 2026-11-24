@@ -6,7 +6,7 @@ const app = express();
 const toNumber = (v) => {
   if (typeof v !== 'string' || v.trim() === '') return null;
   const n = Number(v);
-  return Number.isFinite(n) ? n : null;
+  return Number.isFinite(n) ? n : null
 };
 
 app.get('/health', (_req, res) => {
